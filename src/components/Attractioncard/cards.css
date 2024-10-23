@@ -1,0 +1,44 @@
+.card-container {
+    display: flex; /* Display cards in a horizontal row */
+    justify-content: space-between; /* Space out the cards evenly */
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line if space is limited */
+    margin: 20px; /* Add margin for spacing */
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for better depth */
+    overflow: hidden;
+    width: 30%; /* Adjust width as needed */
+    margin: 10px; /* Add margin for spacing */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .card__image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .card__content {
+    padding: 16px; /* Add padding to content */
+  }
+  
+  .card__title {
+    font-size: 1.5rem; /* Increased font size for title */
+    font-weight: bold;
+    margin: 0 0 10px; /* Space between title and description */
+    color: #333; /* Dark color for contrast */
+  }
+  
+  .card__description {
+    font-size: 14px;
+    color: #666; /* Lighter color for description */
+    line-height: 1.5; /* Improved readability */
+  }
+  
+  

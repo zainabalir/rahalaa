@@ -1,0 +1,39 @@
+.ancient-civilization-info1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, rgba(24, 30, 75, 1) 0%, rgba(222, 127, 18, 0.3) 100%);
+  }
+  .ancient-civilization-info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 81.125rem;
+    padding-top: 2.5625rem;
+    padding-bottom: 36.6875rem;
+  }
+  .majestic-heading {
+    flex: 0 0 auto;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    font: 700 80px/100px Poppins, sans-serif;
+    color: white;
+    letter-spacing: 0.025rem;
+  }
+  .ancient-civilization-info2 {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.6875rem;
+    font: 500 36px/45px Poppins, sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.01125rem;
+  }
+  
