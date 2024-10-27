@@ -1,50 +1,40 @@
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: #f7f4f0; /* Light background color to enhance the content */
-    height: 500px;
-    position: relative;
-  }
-  
-  .hero-content {
-    z-index: 2;
-  }
-  
-  .hero-content h1 {
-    font-size: 48px;
-    color: #232d4b; /* Dark blue for the headline */
-    margin-bottom: 20px;
-    font-family: 'Georgia', serif; /* Elegant serif font for tradition */
-  }
-  
-  .hero-btn {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #f08a47; /* Light orange background for button */
-    color: #232d4b; /* Dark blue text */
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  
-  .hero-btn:hover {
-    background-color: #e07a3a; /* Slightly darker orange on hover */
-  }
-  
-  .hero-background {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    background-image: url(./1000_F_114139378_E9CGaJLEtdO1FtlR5X18ltbzqbpDlArq.jpg); /* Add the background image of the landmarks */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-    z-index: 1;
-  }
+.container-hero {
+  text-align: center;
+  padding: 20px;
+  background:#fff;
+}
 
-  
+.container-exploremore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* لضمان تساوي الارتفاع بين النص والصورة */
+  margin-bottom: 20px; /* لإضافة مساحة بين الجزء العلوي وشريط البحث */
+}
+
+.containerlink {
+  flex: 1; /* يسمح بتوسيع هذا القسم */
+  padding-right: 20px;
+  text-align: left;
+  ; /* مساحة بين النص والصورة */
+}
+.herodis {
+font-size: 50px ;
+text-align: left;
+color: #0442c3;
+}
+ 
+.button-he{
+  font-size: large !important;
+display: block;
+margin-top: 60px; /* ضبط المسافة بين الزر والنص */
+}
+
+.container-image {
+  flex: 1; /* يسمح بتوسيع هذا القسم */
+  text-align: right;
+}
+
+.container-image img {
+  max-width: 100%; /* لجعل الصورة مرنة */
+  height: auto; /* للحفاظ على نسبة الطول إلى العرض */
+}

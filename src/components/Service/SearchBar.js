@@ -1,68 +1,79 @@
-import React, { useState } from "react";
-import './services.css'
+import React, { useEffect, useState } from 'react';
+import './searchbar.css';
+import Button from '../Button/Button'
 
-const SearchBar = () => {
-  const [location, setLocation] = useState("");
-  const [date, setDate] = useState("");
-  const [traveler, setTraveler] = useState("");
-  const [locationOptions, setLocationOptions] = useState([
-    "Center Point, Los Angeles",
-    "Center Point, London",
-    "Center Point, Tokyo",
-  ]);
+const Searchbar = () => {
+  const [destinations, setDestinations] = useState([]); // حالة لتخزين الوجهات
+  const [loading, setLoading] = useState(true); // حالة لتتبع التحميل
+  const backNumber = 1; // رقم الباك الثابت، يمكنك تغييره حسب الحاجة
 
-  const handleLocationChange = (event) => {
-    setLocation(event.target.value);
-  };
+  useEffect(() => {
+    // يمكنك استدعاء API لجلب الوجهات، لكن هنا سأستخدم قائمة ثابتة للوجهات
+    const staticDestinations = [
+      { id: 'baghdad', name: 'Baghdad' },
+      { id: 'erbil', name: 'Erbil' },
+      { id: 'sulaimani', name: 'Sulaimani' },
+      { id: 'basra', name: 'Basra' },
+      { id: 'korek-mountains', name: 'Korek Mountains' },
+      // أضف المزيد من الوجهات حسب الحاجة
+    ];
+    setDestinations(staticDestinations);
+    setLoading(false); // تغيير حالة التحميل بعد إضافة الوجهات
+  }, []); // تفعيل مرة واحدة عند تحميل المكون
 
   return (
-    <div className="form-container">
-      {/* Location Dropdown */}
-      <div className="input-container">
-        <label htmlFor="location">Where</label>
-        <input
-          list="locationOptions"
-          id="location"
-          value={location}
-          onChange={handleLocationChange}
-          placeholder="Choose a location"
-        />
-        <datalist id="locationOptions">
-          {locationOptions.map((option, index) => (
-            <option key={index} value={option} />
-          ))}
-        </datalist>
-      </div>
+    <section className="tour-search">
+      <div className="searchcontainer">
+        <form action="" className="tour-search-form">
+          <div className="input-wrapper">
+            <label htmlFor="destination" className="input-label">Any Where</label>
+            {loading ? (
+              <p>Loading...</p> // عرض نص التحميل إذا كانت البيانات لم تُحمّل بعد
+            ) : (
+              <select 
+                name="destination" 
+                id="destination" 
+                required 
+                className="input-field"
+              >
+                <option value="" disabled selected>Select a destination</option>
+                {destinations.map(destination => (
+                  <option key={destination.id} value={destination.id}>{destination.name}</option> // عرض الوجهات
+                ))}
+              </select>
+            )}
+          </div>
 
-      {/* Date Input */}
-      <div className="input-container">
-        <label htmlFor="date">Date</label>
-        <input
-          type="date"
-          id="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
-      </div>
+          <div className="input-wrapper">
+            <label htmlFor="people" className="input-label">Pax Number*</label>
+            <input 
+              type="number" 
+              name="people" 
+              id="people" 
+              required 
+              placeholder="No. of People" 
+              className="input-field" 
+              value={backNumber} // تعيين رقم الباك
+              readOnly // جعله للقراءة فقط
+            />
+          </div>
 
-      {/* Traveler Input */}
-      <div className="input-container">
-        <label htmlFor="traveler">Traveler</label>
-        <input
-          type="text"
-          id="traveler"
-          value={traveler}
-          onChange={(e) => setTraveler(e.target.value)}
-          placeholder="Enter traveler name"
-        />
-      </div>
+          <div className="input-wrapper">
+            <label htmlFor="dateRange" className="input-label">Date (Checkin - Checkout)*</label>
+            <input 
+              type="date" 
+              name="dateRange" 
+              id="dateRange" 
+              required 
+              className="input-field" 
+            />
+          </div>
 
-      {/* Submit Button */}
-      <div className="input-container">
-        <button className="submit-btn">Travel Company Booking</button>
+          <Button label="Login" width='142px' height='40px'  className="button-lo" fontSize='2rem'/>
+          </form>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default SearchBar;
+export default Searchbar;

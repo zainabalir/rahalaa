@@ -1,15 +1,15 @@
-// Footer.js
 import React from 'react';
-import './footer.css'; // Optional: For styling
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import social media icons
-import logo from '../Header/Untitled_logo_1_free-file__4_-removebg-preview.png'
-const Footer = () => {
+import './footer.css';
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import logo from '../Header/Untitled_logo_1_free-file__4_-removebg-preview.png';
+
+const Footer = React.memo(() => {
     return (
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-logo">
                     <img src={logo} alt="Discover Mesopotamia" />
-                    <p >Discover Iraq and live the adventure</p>
+                    <p>Discover Iraq and live the adventure</p>
                 </div>
                 <div className="footer-links">
                     <div className="footer-column">
@@ -48,6 +48,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-};
+});
 
 export default Footer;

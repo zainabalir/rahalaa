@@ -1,0 +1,138 @@
+.tour-search {
+    padding: 20px;
+  }
+  
+  .searchcontainer {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+  }
+  
+  .tour-search-form {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 25%; /* لضبط عرض كل حقل */
+  }
+  
+  .input-label {
+    margin-bottom: 5px;.carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        font-size: 20px;
+    }
+    
+    .carousel-content {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .images-container {
+        display: flex;
+    }
+    
+    .image-wrapper {
+        margin: 0 10px; /* المسافة بين الصور */
+        text-align: center;
+    }
+    
+    .carousel img {
+        width: 200px; /* عرض ثابت للصور */
+        height: 150px; /* ارتفاع ثابت للصور */
+        object-fit: cover; /* ضمان أن الصورة تملأ المساحة المحددة */
+        border-radius: 10px;
+    }
+    
+    .carousel-button {
+        background-color: #0442c3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .carousel-button:hover {
+        background-color: #033299;
+    }
+    
+    /* تأثير الحركة */
+    .slide-in {
+        animation: slideIn 0.5s forwards;
+    }
+    
+    .slide-out {
+        animation: slideOut 0.5s forwards;
+    }
+    
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%); /* بدءًا من اليمين */
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0); /* الوصول إلى الموقع النهائي */
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideOut {
+        from {
+            transform: translateX(0); /* بدءًا من الموقع الحالي */
+            opacity: 1;
+        }
+        to {
+            transform: translateX(-100%); /* الانتقال إلى اليسار */
+            opacity: 0;
+        }
+    }
+    
+    font-weight: bold;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #0442c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+    align-self: flex-end;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* لإضافة مساحة داخلية */
+    border: 2px solid #ccc; /* حدود الإطار */
+    border-radius: 10px; /* زاوية منحنية للإطار */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف للإطار */
+    background-color: #fff; /* خلفية بيضاء للإطار */
+  }
+  
+  

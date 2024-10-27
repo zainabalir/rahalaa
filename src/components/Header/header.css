@@ -2,6 +2,7 @@
 .header {
     display: flex; /* استخدام Flexbox لتخطيط العناصر */
     align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    height: 70px;
     justify-content: space-between; /* توزيع العناصر بالتساوي */
     background-color: #0442c3; /* لون الخلفية للشريط العلوي */
     padding: 15px 20px; /* الحشوة الداخلية للشريط */
@@ -28,7 +29,8 @@
     flex-grow: 1; /* السماح لشريط الروابط بالنمو */
     display: flex; /* استخدام Flexbox لتخطيط الروابط */
     justify-content: center; /* مركزية العناصر الأفقية */
-}
+    height: fit-content;
+ }
 
 .list {
     list-style: none; /* إزالة النقاط من القائمة */
@@ -40,23 +42,24 @@
 
 /* Styling for Navigation Links */
 .list li {
-    /* تخصيص عناصر القائمة (li) */
     display: inline; /* عرض عناصر القائمة بشكل أفقي */
 }
-
 .nav-links a {
     text-decoration: none; /* إزالة التزيين الافتراضي للنص */
     color: white; /* لون النص للروابط */
-    font-size: 1.5rem; /* حجم خط الروابط */
+    font-size: 1.2 rem; /* حجم خط الروابط */
     font-weight: 500; /* وزن الخط */
-    position: relative; /* تحديد الموضع للعناصر الفرعية */
+    padding: 10px 20px; /* إضافة حشوة لجعل الروابط بشكل مستطيل */
+    border-radius: 5px; /* إضافة زوايا مدورة */
     transition: color 0.3s ease-in-out; /* إضافة انتقال سلس لتغيير اللون */
 }
 
-/* Change text color on hover */
+/* إزالة الخلفية عند التحويم */
 .nav-links a:hover {
     color: #0c265f; /* تغيير لون النص عند التحويم */
+    background-color: transparent; /* التأكد من عدم وجود لون خلفية */
 }
+
 
 /* Login Button Styling */
 .login-container .login-button {
@@ -72,7 +75,6 @@
 
 /* Change button color on hover */
 .login-button:hover {
-    /* background-color: #ffcc00; */
     color: #0442c3; /* عكس لون النص عند التحويم */
     transform: scale(1.1); /* تكبير الزر عند التحويم */
 }

@@ -1,0 +1,60 @@
+.about-section {
+    background-color: #fff; /* Background color */
+    padding: 20px; /* Adjust padding for spacing */
+    text-align: center; /* Center text */
+    position: relative;
+    min-height: 200px; /* Ensure enough height for content */
+    margin-bottom: 20px; /* Space between About section and footer */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    opacity: 0.3; /* Set opacity for background effect */
+}
+
+
+.about-container {
+    max-width: 800px; /* Max width */
+    margin: auto; /* Auto margin for centering */
+    z-index: 1; /* To place above the image */
+    position: relative; /* To create a stacking context */
+}
+
+.about-title {
+    font-size: 2.5rem; /* Font size */
+    color: #0442c3; /* Title color */
+    margin-bottom: 10px; /* Adjusted bottom margin */
+}
+
+.about-description {
+    font-size: 1.2rem; /* Font size */
+    margin-bottom: 15px; /* Adjusted bottom margin */
+    line-height: 1.6; /* Line height */
+}
+
+.about-subtitle {
+    font-size: 1.5rem; /* Subtitle font size */
+    color: #000000; /* Subtitle color */
+    margin-bottom: 10px; /* Adjusted bottom margin */
+}
+
+.about-services {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.about-services li {
+    font-size: 1.1rem; /* Font size for list items */
+    margin: 5px 0; /* Reduced vertical margin between items */
+}
+
+/* Use the image as a normal background */
+.about-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.3; /* Set opacity for background effect */
+    position: relative; /* Keep it in the normal flow */
+    z-index: 0; /* Behind the text */
+}
+
+h1 h3{
+    color: #0442c3;
+}

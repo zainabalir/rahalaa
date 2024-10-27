@@ -1,15 +1,24 @@
 import React from 'react';
 import './hero.css';
+import Button from '../Button/Button';
+import imageuu from './backimg.png'; // تأكد من استيراد الصورة بشكل صحيح
+import Searchbar from '../Service/Searchbar';
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
-      <div className="hero-content">
-        <h1>Discover Iraq’s rich history and culture</h1>
-        <button className="hero-btn">Explore More</button>
+    <div className='container-hero'>
+      <div className='container-exploremore'>
+        <div className='containerlink'>
+          <h1 className='herodis'>Discover Iraq’s rich history and culture</h1>
+          <Button label="Explore more" width='170px' height='50px'  className="button-he" fontSize='2rem'/>
+
+          </div>
+        <div className='container-image'>
+          <img src={imageuu} alt='Hero' />
+        </div>
       </div>
-      <div className="hero-background"></div>
-    </section>
+      <Searchbar />
+    </div>
   );
 };
 

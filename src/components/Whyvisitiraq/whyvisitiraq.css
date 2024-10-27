@@ -1,28 +1,37 @@
-.ancient-civilization-info1 {
+ .ancient-civilization-info1 {
     box-sizing: border-box;
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: linear-gradient(180deg, rgba(24, 30, 75, 1) 0%, rgba(222, 127, 18, 0.3) 100%);
+    background: linear-gradient(to bottom, #0442c3 0%, #c1c6d8 100%);
+    height: 700px;
   }
+  /* .ancient-civilization-info1::after {
+    content: "";
+    position: absolute;
+    top: 170px; /* يبدأ الأبيض بعد 170 بكسل */
+    /* left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white; 
+  } */ */
   .ancient-civilization-info {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: flex-start;
-    width: 81.125rem;
     padding-top: 2.5625rem;
-    padding-bottom: 36.6875rem;
+    padding-bottom: 0;
   }
   .majestic-heading {
     flex: 0 0 auto;
-    align-self: center;
+text-align: center;
     padding: 0;
     margin: 0;
-    font: 700 80px/100px Poppins, sans-serif;
+    font: 700 60px/100px Poppins, sans-serif;
     color: white;
     letter-spacing: 0.025rem;
   }
@@ -30,10 +39,14 @@
     flex: 0 0 auto;
     padding: 0;
     margin: 0;
-    margin-top: 0.6875rem;
+    margin-top: 0;
     font: 500 36px/45px Poppins, sans-serif;
     color: white;
     text-align: center;
     letter-spacing: 0.01125rem;
   }
-  
+
+
+.Whynot {
+  margin: 0; 
+   padding: 0; }
