@@ -2,7 +2,9 @@ import React from 'react';
 import './hero.css';
 import Button from '../Button/Button';
 import imageuu from './backimg.png'; // تأكد من استيراد الصورة بشكل صحيح
-import Searchbar from '../Service/Searchbar';
+import SearchBar from '../Service/SearchBar';
+
+
 
 const HeroSection = () => {
   return (
@@ -17,7 +19,7 @@ const HeroSection = () => {
           <img src={imageuu} alt='Hero' />
         </div>
       </div>
-      <Searchbar />
+      <SearchBar />
     </div>
   );
 };

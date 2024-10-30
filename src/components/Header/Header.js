@@ -25,7 +25,7 @@ const Header = () => {
 
             <div className="login-container">
                 <Link to="/login">
-                    <Button label="Login" width='142px' height='40px' className="buttonD" fontSize='2rem'/>
+                    <Button  label="Login" width='142px' height='40px' className="buttonD" fontSize='2rem'/>
                 </Link>
             </div>
         </header>

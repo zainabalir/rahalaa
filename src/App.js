@@ -12,6 +12,12 @@ import Login from './components/Login/Login';
 import { Route, Routes } from 'react-router-dom';
 // import CustomFooter from './components/Footer/Footer'; // Adjust the path as needed
 import Home from './components/Home/Home';
+
+import ZainabHom from './components/zainabcompones/ZainabHom';
+import Comp1Bookpage from './components/zainabcomp1booking/Comp1Bookpage';
+import Comp2Bookpage from './components/zainabcomp2booking/Comp2booking';
+import Comp3bookpage from './components/zainabcomp3book/Comp3booking';
+
 // import Header from './components/Header/Header'
 // import ImageCarousel from  './components/Korek Mountains,/ImageCarsousel'
 // import Signup from "./components/Signup/Signup"
@@ -24,6 +30,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
+
+        <Route path="/components" element={<ZainabHom/>} />  
+        <Route path="/Comp1Bookpage" element={<Comp1Bookpage/>} /> 
+        <Route path="/Comp2Bookpage" element={<Comp2Bookpage/>} /> 
+        <Route path="/Comp3bookpage" element={<Comp3bookpage/>} /> 
+       
       </Routes>
       
       {/* <SearchBar/> */}

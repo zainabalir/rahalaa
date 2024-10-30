@@ -12,7 +12,9 @@
     position: relative; /* تحديد الموضع بالنسبة للعناصر الأخرى */
     z-index: 1000; /* التأكد من أن الشريط العلوي يبقى فوق العناصر الأخرى */
 }
-
+.buttonD{
+    display: flex;
+}
 /* Logo Section */
 .logo {
     display: flex; /* استخدام Flexbox لتخطيط عناصر الشعار */
